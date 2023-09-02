@@ -1,0 +1,19 @@
+Overview
+In this study, the proteomic signature for renal clear cell carcinoma was downloaded from The Clinical Proteomic Tumor Analysis Consortium (CPTAC) database (Study ID: PDC000127).Relevent data we analyzed were included:
+CPTAC_CCRCC_Discovery_Cohort_Clinical_Data_r4_Sept2019.xlsx
+CPTAC_CCRCC_Whole_abundance_gene_protNorm=2_CB.xlsx
+
+Visualizing
+Figure 5a
+GraphPad Prism software v8.4.2.679 was utilized to display fold changes of metabolic genes and proteins from clinical ccRCC data in the form of a scatter plot.
+Figure 5a
+GraphPad Prism software v8.4.2.679 was utilized to display expression levels of metabolic proteins from clinical ccRCC data in the form of a dot plot (P<0.05).
+Figure 5c
+GraphPad Prism software v8.4.2.679 utilized to display the correlation of key protein abundances and protein level of SETD2 in human ccRCC in the form of a bar chart(P<0.05).
+
+Quantification and statistical analysis 
+Statistical evaluation was conducted using Student’s t-test. The Pearson correlation was used to analyze the strength of the association between expression levels of SETD2 and its related proteins in patient samples. A significant difference was defined as P <0.05.
+
+
+
+
