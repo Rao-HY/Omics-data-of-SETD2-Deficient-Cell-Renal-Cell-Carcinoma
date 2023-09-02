@@ -1,0 +1,19 @@
+Overview
+DIA-NN - a universal software for data-independent acquisition (DIA) proteomics data processing by Demichev, Ralser and Lilley labs. In 2018, DIA-NN opened a new chapter in proteomics, introducing a number of algorithms which enabled reliable, robust and quantitatively accurate large-scale experiments using high-throughput methods.
+In our study, Proteomics raw files were analyzed in DIA-NN (https://github.com/vdemichev/DiaNN/) with default parameters, searching against the Mus musculus database (UniProt, https://www.uniprot.org/, 2022.01.11). The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=9) and ccRCC mice (group KMS, n=5). Protomics raw data have been deposited in the ProteomeXchange Consortium via the PRIDE partner repository with dataset identifier PXD038966. The details for sample preparation and data acquisition can be found in our publication.
+
+Details
+Download the DIA-NN software (https://github.com/vdemichev/DiaNN/releases/tag/1.8.1)
+• Click Raw (in the Input pane), select your raw mass spectrometry data files (ProteomeXchange Consortium, PXD038966).
+• Click Add FASTA, add one or more sequence databases in UniProt format.
+• Specify Main output file name in the Output pane and click Run.
+• Data were analyzed with default parameters
+
+We uploaded process log of DIA-NN:
+• Processlog.txt
+
+Analysis results
+The processed data have been uploaded into the Source Data. These data also have been deposited in the ProteomeXchange Consortium via the PRIDE partner repository with dataset identifier PXD038966. 
+
+Visualizing
+Heatmap of the altered proteins between KM (n=9) and KMS (n=5) mice were constructed using TBtools (version 1.0986; https://github.com/CJ-Chen/TBtools/releases) (Fig. 3b and Fig. 4b). Identified proteins with significant differences (P value < 0.05 and FC>1.5) between two groups (KMS vs KM) were selected to show their fold changes and FDR using GraphPad Prism software v8.4.2.679, depicted in the form of volcano plot (Fig. 3c).

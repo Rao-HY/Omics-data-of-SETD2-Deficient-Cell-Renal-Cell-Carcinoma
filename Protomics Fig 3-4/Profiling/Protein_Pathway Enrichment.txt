@@ -1,0 +1,21 @@
+Overview
+In our study, the GO/KEGG enrichment analysis was executed using R software package clusterProfiler (version: v.4.5.0) through Hiplot Pro (https://hiplot.com.cn/), a comprehensive web service for biomedical data analysis and visualization. 
+
+Details
+The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=9) and ccRCC mice (group KMS, n=5). Protomics raw data have been deposited in the ProteomeXchange Consortium via the PRIDE partner repository with dataset identifier PXD038966. The details for sample preparation and data acquisition can be found in our publication. 
+Processing
+• Login Hiplot Pro.
+• Choose GO/KEGG enrichment analysis tool.
+• Import expression data (Protein expression data.txt).
+• Site Parameters and run analysis.
+Processing parameters were set as following:
+• Species: M. musculus
+• Analysis mode: BP MF CC KEGG
+• P-value correction method: BH
+• Minimal gene set: 10
+• Maximum gene set: 500
+• P threshold: 0.05
+• Q threshold: 0.05
+
+Analysis results
+KEGG enrichment retule was showed in Fig. 3d. The processed data, serving as the foundation for Fig. 3d, have been uploaded into the Source Data. 

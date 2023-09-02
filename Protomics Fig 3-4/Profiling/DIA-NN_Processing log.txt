@@ -1,0 +1,1041 @@
+diann.exe --lib "" --threads 32 --verbose 1 --out "F:\Dia_data_export\RHY_1117\report.tsv" --qvalue 0.01 --matrices  --out-lib "F:\Dia_data_export\RHY_1117\predicted_lib.tsv" --gen-spec-lib --predictor --fasta "F:\Dia_data_export\UP000000589_10090.fasta" --fasta-search --min-fr-mz 200 --max-fr-mz 1800 --met-excision --cut K*,R* --missed-cleavages 1 --min-pep-len 7 --max-pep-len 30 --min-pr-mz 300 --max-pr-mz 1800 --min-pr-charge 1 --max-pr-charge 4 --unimod4 --var-mods 1 --var-mod UniMod:35,15.994915,M --reanalyse --relaxed-prot-inf --smart-profiling --peak-center --no-ifs-removal 
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Thu Nov 17 15:29:59 2022
+CPU: AuthenticAMD AMD Ryzen Threadripper 3970X 32-Core Processor
+SIMD instructions: AVX AVX2 FMA SSE4.1 SSE4.2 SSE4a 
+Logical CPU cores: 32
+Thread number set to 32
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+A spectral library will be generated
+Deep learning will be used to generate a new in silico spectral library from peptides provided
+Library-free search enabled
+Min fragment m/z set to 200
+Max fragment m/z set to 1800
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of missed cleavages set to 1
+Min peptide length set to 7
+Max peptide length set to 30
+Min precursor m/z set to 300
+Max precursor m/z set to 1800
+Min precursor charge set to 1
+Max precursor charge set to 4
+Cysteine carbamidomethylation enabled as a fixed modification
+Maximum number of variable modifications set to 1
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+A spectral library will be created from the DIA runs and used to reanalyse them; .quant files will only be saved to disk during the first step
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+Fixed-width center of each elution peak will be used for quantification
+Interference removal from fragment elution curves disabled
+Exclusion of fragments shared between heavy and light peptides from quantification is not supported in FASTA digest mode - disabled; to enable, generate an in silico predicted spectral library and analyse with this library
+WARNING: MBR turned off, two or more raw files are required
+
+0 files will be processed
+[0:00] Loading FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[0:05] Processing FASTA
+[0:17] Assembling elution groups
+[0:25] 5690437 precursors generated
+[0:25] Gene names missing for some isoforms
+[0:25] Library contains 21955 proteins, and 21649 genes
+[0:25] Encoding peptides for spectra and RTs prediction
+[0:35] Predicting spectra and IMs
+[21:36] Predicting RTs
+[27:37] Decoding predicted spectra and IMs
+[27:49] Decoding RTs
+[27:58] Saving the library to F:\Dia_data_export\RHY_1117\predicted_lib.predicted.speclib
+[28:06] Initialising library
+
+[28:11] Log saved to F:\Dia_data_export\RHY_1117\predicted_lib.log.txt
+Finished
+
+
+DIA-NN exited
+diann.exe --f "E:\LCMS\data_convert\ZY-2-1.mzML" --f "E:\LCMS\data_convert\ZY-2-2.mzML" --f "E:\LCMS\data_convert\ZY-2-3.mzML" --f "E:\LCMS\data_convert\ZY-2-4.mzML" --f "E:\LCMS\data_convert\ZY-2-5.mzML" --f "E:\LCMS\data_convert\ZY-2-6.mzML" --f "E:\LCMS\data_convert\ZY-2-7.mzML" --f "E:\LCMS\data_convert\ZY-2-8.mzML" --f "E:\LCMS\data_convert\ZY-2-9.mzML" --f "E:\LCMS\data_convert\ZY-5-1.mzML" --f "E:\LCMS\data_convert\ZY-5-2.mzML" --f "E:\LCMS\data_convert\ZY-5-3.mzML" --f "E:\LCMS\data_convert\ZY-5-4.mzML" --f "E:\LCMS\data_convert\ZY-5-5.mzML" --f "E:\LCMS\data_convert\ZY-5-6.mzML" --lib "F:\Dia_data_export\RHY_1117\predicted_lib.predicted.speclib" --threads 32 --verbose 1 --out "F:\Dia_data_export\RHY_1117\report.tsv" --qvalue 0.01 --matrices  --out-lib "F:\Dia_data_export\RHY_1117\predicted_lib.tsv" --gen-spec-lib --predictor --fasta "F:\Dia_data_export\UP000000589_10090.fasta" --fasta-search --min-fr-mz 200 --max-fr-mz 1200 --met-excision --cut K*,R* --missed-cleavages 2 --min-pep-len 7 --max-pep-len 30 --min-pr-mz 350 --max-pr-mz 1200 --min-pr-charge 1 --max-pr-charge 4 --unimod4 --var-mods 1 --var-mod UniMod:35,15.994915,M --reanalyse --relaxed-prot-inf --smart-profiling 
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Thu Nov 17 16:08:22 2022
+CPU: AuthenticAMD AMD Ryzen Threadripper 3970X 32-Core Processor
+SIMD instructions: AVX AVX2 FMA SSE4.1 SSE4.2 SSE4a 
+Logical CPU cores: 32
+Thread number set to 32
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+A spectral library will be generated
+Deep learning will be used to generate a new in silico spectral library from peptides provided
+Library-free search enabled
+Min fragment m/z set to 200
+Max fragment m/z set to 1200
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of missed cleavages set to 2
+Min peptide length set to 7
+Max peptide length set to 30
+Min precursor m/z set to 350
+Max precursor m/z set to 1200
+Min precursor charge set to 1
+Max precursor charge set to 4
+Cysteine carbamidomethylation enabled as a fixed modification
+Maximum number of variable modifications set to 1
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+A spectral library will be created from the DIA runs and used to reanalyse them; .quant files will only be saved to disk during the first step
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+Exclusion of fragments shared between heavy and light peptides from quantification is not supported in FASTA digest mode - disabled; to enable, generate an in silico predicted spectral library and analyse with this library
+
+15 files will be processed
+[0:00] Loading FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[0:34] Loading spectral library F:\Dia_data_export\RHY_1117\predicted_lib.predicted.speclib
+[0:40] Library annotated with sequence database(s): F:\Dia_data_export\UP000000589_10090.fasta
+[0:42] Spectral library loaded: 21955 protein isoforms, 32438 protein groups and 5690437 precursors in 1771132 elution groups.
+[0:42] Processing FASTA
+[1:07] Assembling elution groups
+[1:29] Finding proteotypic peptides (assuming that the list of UniProt ids provided for each peptide is complete)
+[1:29] 9905074 precursors generated
+[1:30] Gene names missing for some isoforms
+[1:30] Library contains 21963 proteins, and 21655 genes
+[1:30] Encoding peptides for spectra and RTs prediction
+[1:50] Predicting spectra and IMs
+DIA-NN exited
+diann.exe --f "E:\LCMS\data_convert\ZY-Fraction-8.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-7.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-6.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-5.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-4.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-3.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-2.mzML" --f "E:\LCMS\data_convert\ZY-Fraction-1.mzML" --lib "F:\Dia_data_export\RHY_1117\predicted_lib.predicted.speclib" --threads 32 --verbose 1 --out "F:\Dia_data_export\RHY_1117\report.tsv" --qvalue 0.01 --matrices  --out-lib "F:\Dia_data_export\RHY_1117\dda_lib.tsv" --gen-spec-lib --fasta "F:\Dia_data_export\UP000000589_10090.fasta" --met-excision --cut K*,R* --var-mods 1 --var-mod UniMod:35,15.994915,M --reanalyse --relaxed-prot-inf --smart-profiling 
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Thu Nov 17 22:58:24 2022
+CPU: AuthenticAMD AMD Ryzen Threadripper 3970X 32-Core Processor
+SIMD instructions: AVX AVX2 FMA SSE4.1 SSE4.2 SSE4a 
+Logical CPU cores: 32
+Thread number set to 32
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+A spectral library will be generated
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of variable modifications set to 1
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+A spectral library will be created from the DIA runs and used to reanalyse them; .quant files will only be saved to disk during the first step
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+8 files will be processed
+[0:00] Loading spectral library F:\Dia_data_export\RHY_1117\predicted_lib.predicted.speclib
+[2:06] Library annotated with sequence database(s): F:\Dia_data_export\UP000000589_10090.fasta
+[2:07] Spectral library loaded: 21955 protein isoforms, 32438 protein groups and 5690437 precursors in 1771132 elution groups.
+[2:07] Loading protein annotations from FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[2:09] Annotating library proteins with information from the FASTA database
+[2:09] Gene names missing for some isoforms
+[2:09] Library contains 21955 proteins, and 21649 genes
+[2:09] Initialising library
+
+[2:14] First pass: generating a spectral library from DIA data
+[2:14] File #1/8
+[2:14] Loading run E:\LCMS\data_convert\ZY-Fraction-8.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[2:45] 3246045 library precursors are potentially detectable
+[2:46] Processing...
+[3:42] RT window set to 12.5851
+[3:42] Peak width: 2.892
+[3:42] Scan window radius set to 6
+[3:42] Recommended MS1 mass accuracy setting: 9.72046 ppm
+[7:36] Optimised mass accuracy: 27.3272 ppm
+[13:30] Removing low confidence identifications
+[13:30] Removing interfering precursors
+[13:37] Training neural networks: 76183 targets, 54615 decoys
+[13:42] Number of IDs at 0.01 FDR: 30842
+[13:42] Calculating protein q-values
+[13:42] Number of genes identified at 1% FDR: 5746 (precursor-level), 5267 (protein-level) (inference performed using proteotypic peptides only)
+[13:43] Quantification
+[13:45] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-8.mzML.quant.
+
+[13:46] File #2/8
+[13:46] Loading run E:\LCMS\data_convert\ZY-Fraction-7.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[14:20] 2840116 library precursors are potentially detectable
+[14:20] Processing...
+[15:00] RT window set to 10.0521
+[15:00] Recommended MS1 mass accuracy setting: 8.37597 ppm
+[19:08] Removing low confidence identifications
+[19:08] Removing interfering precursors
+[19:15] Training neural networks: 76860 targets, 56250 decoys
+[19:19] Number of IDs at 0.01 FDR: 28304
+[19:19] Calculating protein q-values
+[19:20] Number of genes identified at 1% FDR: 5630 (precursor-level), 5203 (protein-level) (inference performed using proteotypic peptides only)
+[19:20] Quantification
+[19:21] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-7.mzML.quant.
+
+[19:23] File #3/8
+[19:23] Loading run E:\LCMS\data_convert\ZY-Fraction-6.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[19:56] 3060529 library precursors are potentially detectable
+[19:57] Processing...
+[20:37] RT window set to 11.4625
+[20:38] Recommended MS1 mass accuracy setting: 9.55803 ppm
+[25:11] Removing low confidence identifications
+[25:12] Removing interfering precursors
+[25:19] Training neural networks: 80077 targets, 60713 decoys
+[25:23] Number of IDs at 0.01 FDR: 30364
+[25:23] Calculating protein q-values
+[25:24] Number of genes identified at 1% FDR: 5818 (precursor-level), 5389 (protein-level) (inference performed using proteotypic peptides only)
+[25:24] Quantification
+[25:26] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-6.mzML.quant.
+
+[25:27] File #4/8
+[25:27] Loading run E:\LCMS\data_convert\ZY-Fraction-5.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[26:01] 3185762 library precursors are potentially detectable
+[26:01] Processing...
+[26:44] RT window set to 11.4578
+[26:44] Recommended MS1 mass accuracy setting: 9.39735 ppm
+[31:26] Removing low confidence identifications
+[31:26] Removing interfering precursors
+[31:33] Training neural networks: 86910 targets, 65185 decoys
+[31:38] Number of IDs at 0.01 FDR: 31343
+[31:38] Calculating protein q-values
+[31:39] Number of genes identified at 1% FDR: 5973 (precursor-level), 5559 (protein-level) (inference performed using proteotypic peptides only)
+[31:39] Quantification
+[31:41] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-5.mzML.quant.
+
+[31:43] File #5/8
+[31:43] Loading run E:\LCMS\data_convert\ZY-Fraction-4.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[32:24] 3304856 library precursors are potentially detectable
+[32:24] Processing...
+[33:11] RT window set to 12.4849
+[33:11] Recommended MS1 mass accuracy setting: 11.346 ppm
+[38:04] Removing low confidence identifications
+[38:04] Removing interfering precursors
+[38:11] Training neural networks: 73080 targets, 55538 decoys
+[38:16] Number of IDs at 0.01 FDR: 28243
+[38:16] Calculating protein q-values
+[38:17] Number of genes identified at 1% FDR: 5934 (precursor-level), 5537 (protein-level) (inference performed using proteotypic peptides only)
+[38:17] Quantification
+[38:18] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-4.mzML.quant.
+
+[38:20] File #6/8
+[38:20] Loading run E:\LCMS\data_convert\ZY-Fraction-3.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[39:24] 4028129 library precursors are potentially detectable
+[39:24] Processing...
+[40:25] RT window set to 12.5416
+[40:25] Recommended MS1 mass accuracy setting: 8.78419 ppm
+[46:07] Removing low confidence identifications
+[46:08] Removing interfering precursors
+[46:15] Training neural networks: 69047 targets, 53700 decoys
+[46:19] Number of IDs at 0.01 FDR: 26491
+[46:19] Calculating protein q-values
+[46:20] Number of genes identified at 1% FDR: 6099 (precursor-level), 5821 (protein-level) (inference performed using proteotypic peptides only)
+[46:20] Quantification
+[46:21] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-3.mzML.quant.
+
+[46:23] File #7/8
+[46:23] Loading run E:\LCMS\data_convert\ZY-Fraction-2.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[47:30] 3988909 library precursors are potentially detectable
+[47:31] Processing...
+[48:39] RT window set to 11.5146
+[48:39] Recommended MS1 mass accuracy setting: 9.22075 ppm
+[54:04] Removing low confidence identifications
+[54:05] Removing interfering precursors
+[54:10] Training neural networks: 45165 targets, 40002 decoys
+[54:12] Number of IDs at 0.01 FDR: 16604
+[54:13] Calculating protein q-values
+[54:13] Number of genes identified at 1% FDR: 5175 (precursor-level), 4980 (protein-level) (inference performed using proteotypic peptides only)
+[54:13] Quantification
+[54:15] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-2.mzML.quant.
+
+[54:16] File #8/8
+[54:16] Loading run E:\LCMS\data_convert\ZY-Fraction-1.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[55:05] 4038739 library precursors are potentially detectable
+[55:06] Processing...
+[56:38] RT window set to 8.88121
+[56:38] Recommended MS1 mass accuracy setting: 9.06726 ppm
+[59:39] Removing low confidence identifications
+[59:39] Removing interfering precursors
+[59:42] Training neural networks: 19345 targets, 20380 decoys
+[59:43] Number of IDs at 0.01 FDR: 5800
+[59:43] Calculating protein q-values
+[59:44] Number of genes identified at 1% FDR: 2862 (precursor-level), 2689 (protein-level) (inference performed using proteotypic peptides only)
+[59:44] Quantification
+[59:44] Quantification information saved to E:\LCMS\data_convert\ZY-Fraction-1.mzML.quant.
+
+[59:45] Cross-run analysis
+[59:45] Reading quantification information: 8 files
+[59:46] Quantifying peptides
+[59:48] Assembling protein groups
+[59:52] Quantifying proteins
+[59:53] Calculating q-values for protein and gene groups
+[59:53] Calculating global q-values for protein and gene groups
+[59:53] Writing report
+[60:06] Report saved to F:\Dia_data_export\RHY_1117\report-first-pass.tsv.
+[60:06] Saving precursor levels matrix
+[60:06] Precursor levels matrix (1% precursor and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report-first-pass.pr_matrix.tsv.
+[60:06] Saving protein group levels matrix
+[60:06] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report-first-pass.pg_matrix.tsv.
+[60:06] Saving gene group levels matrix
+[60:06] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report-first-pass.gg_matrix.tsv.
+[60:06] Saving unique genes levels matrix
+[60:06] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report-first-pass.unique_genes_matrix.tsv.
+[60:06] Stats report saved to F:\Dia_data_export\RHY_1117\report-first-pass.stats.tsv
+[60:06] Generating spectral library:
+[60:06] 100606 precursors passing the FDR threshold are to be extracted
+[60:06] Loading run E:\LCMS\data_convert\ZY-Fraction-8.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[60:38] 3246045 library precursors are potentially detectable
+[60:39] 10512 spectra added to the library
+[60:40] Loading run E:\LCMS\data_convert\ZY-Fraction-7.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[61:12] 2840116 library precursors are potentially detectable
+[61:13] 7826 spectra added to the library
+[61:15] Loading run E:\LCMS\data_convert\ZY-Fraction-6.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[61:47] 3060529 library precursors are potentially detectable
+[61:48] 13806 spectra added to the library
+[61:50] Loading run E:\LCMS\data_convert\ZY-Fraction-5.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[62:23] 3185762 library precursors are potentially detectable
+[62:24] 14049 spectra added to the library
+[62:27] Loading run E:\LCMS\data_convert\ZY-Fraction-4.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[63:00] 3304856 library precursors are potentially detectable
+[63:01] 9937 spectra added to the library
+[63:03] Loading run E:\LCMS\data_convert\ZY-Fraction-3.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[63:35] 4028129 library precursors are potentially detectable
+[63:37] 12161 spectra added to the library
+[63:38] Loading run E:\LCMS\data_convert\ZY-Fraction-2.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[64:08] 3988909 library precursors are potentially detectable
+[64:09] 11107 spectra added to the library
+[64:10] Loading run E:\LCMS\data_convert\ZY-Fraction-1.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[64:28] 4038739 library precursors are potentially detectable
+[64:29] 1496 spectra added to the library
+[64:29] Saving spectral library to F:\Dia_data_export\RHY_1117\dda_lib.tsv
+[64:39] 100606 precursors saved
+[64:39] Loading the generated library and saving it in the .speclib format
+[64:39] Loading spectral library F:\Dia_data_export\RHY_1117\dda_lib.tsv
+[64:43] Spectral library loaded: 10518 protein isoforms, 11297 protein groups and 100606 precursors in 83519 elution groups.
+[64:43] Loading protein annotations from FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[64:44] Gene names missing for some isoforms
+[64:44] Library contains 10518 proteins, and 10377 genes
+[64:44] Saving the library to F:\Dia_data_export\RHY_1117\dda_lib.tsv.speclib
+
+[64:48] Second pass: using the newly created spectral library to reanalyse the data
+[64:48] File #1/8
+[64:48] Loading run E:\LCMS\data_convert\ZY-Fraction-8.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[65:14] 86013 library precursors are potentially detectable
+[65:14] Processing...
+[65:16] RT window set to 2.58058
+[65:16] Recommended MS1 mass accuracy setting: 8.98226 ppm
+[65:22] Removing low confidence identifications
+[65:22] Removing interfering precursors
+[65:26] Training neural networks: 54051 targets, 35283 decoys
+[65:28] Number of IDs at 0.01 FDR: 33259
+[65:28] Calculating protein q-values
+[65:28] Number of genes identified at 1% FDR: 6028 (precursor-level), 5040 (protein-level) (inference performed using proteotypic peptides only)
+[65:28] Quantification
+
+[65:32] File #2/8
+[65:32] Loading run E:\LCMS\data_convert\ZY-Fraction-7.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[65:59] 82012 library precursors are potentially detectable
+[65:59] Processing...
+[66:00] RT window set to 2.66152
+[66:00] Recommended MS1 mass accuracy setting: 7.99003 ppm
+[66:07] Removing low confidence identifications
+[66:07] Removing interfering precursors
+[66:10] Training neural networks: 52854 targets, 36028 decoys
+[66:12] Number of IDs at 0.01 FDR: 31628
+[66:12] Calculating protein q-values
+[66:12] Number of genes identified at 1% FDR: 5909 (precursor-level), 5017 (protein-level) (inference performed using proteotypic peptides only)
+[66:12] Quantification
+
+[66:16] File #3/8
+[66:16] Loading run E:\LCMS\data_convert\ZY-Fraction-6.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[66:44] 86958 library precursors are potentially detectable
+[66:44] Processing...
+[66:45] RT window set to 2.59586
+[66:45] Recommended MS1 mass accuracy setting: 8.84428 ppm
+[66:52] Removing low confidence identifications
+[66:52] Removing interfering precursors
+[66:55] Training neural networks: 55970 targets, 37675 decoys
+[66:57] Number of IDs at 0.01 FDR: 34051
+[66:58] Calculating protein q-values
+[66:58] Number of genes identified at 1% FDR: 6106 (precursor-level), 5337 (protein-level) (inference performed using proteotypic peptides only)
+[66:58] Quantification
+
+[67:02] File #4/8
+[67:02] Loading run E:\LCMS\data_convert\ZY-Fraction-5.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[67:30] 89092 library precursors are potentially detectable
+[67:30] Processing...
+[67:31] RT window set to 2.54315
+[67:31] Recommended MS1 mass accuracy setting: 8.68008 ppm
+[67:38] Removing low confidence identifications
+[67:38] Removing interfering precursors
+[67:42] Training neural networks: 56136 targets, 38696 decoys
+[67:44] Number of IDs at 0.01 FDR: 33423
+[67:44] Calculating protein q-values
+[67:44] Number of genes identified at 1% FDR: 6129 (precursor-level), 5194 (protein-level) (inference performed using proteotypic peptides only)
+[67:44] Quantification
+
+[67:49] File #5/8
+[67:49] Loading run E:\LCMS\data_convert\ZY-Fraction-4.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[68:17] 88294 library precursors are potentially detectable
+[68:17] Processing...
+[68:18] RT window set to 3.88311
+[68:18] Recommended MS1 mass accuracy setting: 9.34252 ppm
+[68:25] Removing low confidence identifications
+[68:25] Removing interfering precursors
+[68:29] Training neural networks: 57163 targets, 45730 decoys
+[68:31] Number of IDs at 0.01 FDR: 30179
+[68:31] Calculating protein q-values
+[68:31] Number of genes identified at 1% FDR: 6018 (precursor-level), 5062 (protein-level) (inference performed using proteotypic peptides only)
+[68:31] Quantification
+
+[68:35] File #6/8
+[68:35] Loading run E:\LCMS\data_convert\ZY-Fraction-3.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[69:03] 94429 library precursors are potentially detectable
+[69:03] Processing...
+[69:04] RT window set to 5.84962
+[69:04] Recommended MS1 mass accuracy setting: 9.00739 ppm
+[69:12] Removing low confidence identifications
+[69:12] Removing interfering precursors
+[69:16] Training neural networks: 57598 targets, 51481 decoys
+[69:18] Number of IDs at 0.01 FDR: 27196
+[69:18] Calculating protein q-values
+[69:18] Number of genes identified at 1% FDR: 6076 (precursor-level), 4827 (protein-level) (inference performed using proteotypic peptides only)
+[69:18] Quantification
+
+[69:22] File #7/8
+[69:22] Loading run E:\LCMS\data_convert\ZY-Fraction-2.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[69:47] 94878 library precursors are potentially detectable
+[69:47] Processing...
+[69:49] RT window set to 2.09173
+[69:49] Recommended MS1 mass accuracy setting: 7.9766 ppm
+[69:56] Removing low confidence identifications
+[69:56] Removing interfering precursors
+[69:57] Training neural networks: 28142 targets, 18987 decoys
+[69:58] Number of IDs at 0.01 FDR: 15262
+[69:59] Calculating protein q-values
+[69:59] Number of genes identified at 1% FDR: 5016 (precursor-level), 3563 (protein-level) (inference performed using proteotypic peptides only)
+[69:59] Quantification
+
+[70:01] File #8/8
+[70:01] Loading run E:\LCMS\data_convert\ZY-Fraction-1.mzML
+WARNING: more than 1000 different isolation windows - is this intended?
+[70:14] 92870 library precursors are potentially detectable
+[70:14] Processing...
+[70:16] RT window set to 2.64472
+[70:16] Recommended MS1 mass accuracy setting: 7.98077 ppm
+[70:20] Removing low confidence identifications
+[70:20] Removing interfering precursors
+[70:21] Training neural networks: 10487 targets, 7636 decoys
+[70:21] Number of IDs at 0.01 FDR: 5436
+[70:21] Calculating protein q-values
+[70:21] Number of genes identified at 1% FDR: 2740 (precursor-level), 827 (protein-level) (inference performed using proteotypic peptides only)
+[70:21] Quantification
+
+[70:22] Cross-run analysis
+[70:22] Reading quantification information: 8 files
+[70:22] Quantifying peptides
+[70:25] Quantifying proteins
+[70:25] Calculating q-values for protein and gene groups
+[70:26] Calculating global q-values for protein and gene groups
+[70:26] Writing report
+[70:37] Report saved to F:\Dia_data_export\RHY_1117\report.tsv.
+[70:37] Saving precursor levels matrix
+[70:37] Precursor levels matrix (1% precursor and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report.pr_matrix.tsv.
+[70:37] Saving protein group levels matrix
+[70:37] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report.pg_matrix.tsv.
+[70:37] Saving gene group levels matrix
+[70:37] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report.gg_matrix.tsv.
+[70:37] Saving unique genes levels matrix
+[70:38] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\report.unique_genes_matrix.tsv.
+[70:38] Stats report saved to F:\Dia_data_export\RHY_1117\report.stats.tsv
+[70:38] Log saved to F:\Dia_data_export\RHY_1117\report.log.txt
+Finished
+
+
+DIA-NN exited
+DIA-NN-plotter.exe "F:\Dia_data_export\RHY_1117\report.stats.tsv" "F:\Dia_data_export\RHY_1117\report.tsv" "F:\Dia_data_export\RHY_1117\report.pdf"
+PDF report will be generated in the background
+
+diann.exe --f "E:\LCMS\data_convert\ZY-5-6.mzML" --f "E:\LCMS\data_convert\ZY-5-5.mzML" --f "E:\LCMS\data_convert\ZY-5-4.mzML" --f "E:\LCMS\data_convert\ZY-5-3.mzML" --f "E:\LCMS\data_convert\ZY-5-2.mzML" --f "E:\LCMS\data_convert\ZY-5-1.mzML" --f "E:\LCMS\data_convert\ZY-2-9.mzML" --f "E:\LCMS\data_convert\ZY-2-8.mzML" --f "E:\LCMS\data_convert\ZY-2-7.mzML" --f "E:\LCMS\data_convert\ZY-2-6.mzML" --f "E:\LCMS\data_convert\ZY-2-5.mzML" --f "E:\LCMS\data_convert\ZY-2-4.mzML" --f "E:\LCMS\data_convert\ZY-2-3.mzML" --f "E:\LCMS\data_convert\ZY-2-2.mzML" --f "E:\LCMS\data_convert\ZY-2-1.mzML" --lib "F:\Dia_data_export\RHY_1117\dda_lib.tsv.speclib" --threads 32 --verbose 1 --out "F:\Dia_data_export\RHY_1117\result_quan.tsv" --qvalue 0.01 --matrices  --fasta "F:\Dia_data_export\UP000000589_10090.fasta" --met-excision --cut K*,R* --var-mods 1 --var-mod UniMod:35,15.994915,M --reanalyse --relaxed-prot-inf --smart-profiling 
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Fri Nov 18 01:55:51 2022
+CPU: AuthenticAMD AMD Ryzen Threadripper 3970X 32-Core Processor
+SIMD instructions: AVX AVX2 FMA SSE4.1 SSE4.2 SSE4a 
+Logical CPU cores: 32
+Thread number set to 32
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of variable modifications set to 1
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+A spectral library will be created from the DIA runs and used to reanalyse them; .quant files will only be saved to disk during the first step
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+15 files will be processed
+[0:00] Loading spectral library F:\Dia_data_export\RHY_1117\dda_lib.tsv.speclib
+[0:00] Library annotated with sequence database(s): F:\Dia_data_export\UP000000589_10090.fasta
+[0:00] Spectral library loaded: 10518 protein isoforms, 11297 protein groups and 100606 precursors in 83519 elution groups.
+[0:00] Loading protein annotations from FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[0:00] Annotating library proteins with information from the FASTA database
+[0:00] Gene names missing for some isoforms
+[0:00] Library contains 10518 proteins, and 10377 genes
+[0:00] Initialising library
+
+[0:00] First pass: generating a spectral library from DIA data
+[0:00] File #1/15
+[0:00] Loading run E:\LCMS\data_convert\ZY-5-6.mzML
+[0:53] 100533 library precursors are potentially detectable
+[0:53] Processing...
+[0:55] RT window set to 5.69676
+[0:55] Peak width: 4.724
+[0:55] Scan window radius set to 10
+[0:55] Recommended MS1 mass accuracy setting: 11.459 ppm
+[0:58] Optimised mass accuracy: 16.6171 ppm
+[1:02] Removing low confidence identifications
+[1:02] Removing interfering precursors
+[1:03] Training neural networks: 81088 targets, 91912 decoys
+[1:07] Number of IDs at 0.01 FDR: 26502
+[1:08] Calculating protein q-values
+[1:08] Number of genes identified at 1% FDR: 4197 (precursor-level), 3656 (protein-level) (inference performed using proteotypic peptides only)
+[1:08] Quantification
+[1:08] Quantification information saved to E:\LCMS\data_convert\ZY-5-6.mzML.quant.
+
+[1:08] File #2/15
+[1:08] Loading run E:\LCMS\data_convert\ZY-5-5.mzML
+[1:59] 100533 library precursors are potentially detectable
+[1:59] Processing...
+[2:02] RT window set to 5.86011
+[2:02] Recommended MS1 mass accuracy setting: 12.4401 ppm
+[2:07] Removing low confidence identifications
+[2:07] Removing interfering precursors
+[2:08] Training neural networks: 80477 targets, 92634 decoys
+[2:12] Number of IDs at 0.01 FDR: 28560
+[2:12] Calculating protein q-values
+[2:12] Number of genes identified at 1% FDR: 4251 (precursor-level), 3675 (protein-level) (inference performed using proteotypic peptides only)
+[2:12] Quantification
+[2:13] Quantification information saved to E:\LCMS\data_convert\ZY-5-5.mzML.quant.
+
+[2:13] File #3/15
+[2:13] Loading run E:\LCMS\data_convert\ZY-5-4.mzML
+[3:03] 100533 library precursors are potentially detectable
+[3:03] Processing...
+[3:05] RT window set to 6.05471
+[3:05] Recommended MS1 mass accuracy setting: 11.3906 ppm
+[3:10] Removing low confidence identifications
+[3:10] Removing interfering precursors
+[3:11] Training neural networks: 79897 targets, 92994 decoys
+[3:15] Number of IDs at 0.01 FDR: 27083
+[3:16] Calculating protein q-values
+[3:16] Number of genes identified at 1% FDR: 4131 (precursor-level), 3586 (protein-level) (inference performed using proteotypic peptides only)
+[3:16] Quantification
+[3:16] Quantification information saved to E:\LCMS\data_convert\ZY-5-4.mzML.quant.
+
+[3:16] File #4/15
+[3:16] Loading run E:\LCMS\data_convert\ZY-5-3.mzML
+[4:06] 100533 library precursors are potentially detectable
+[4:06] Processing...
+[4:08] RT window set to 5.95377
+[4:08] Recommended MS1 mass accuracy setting: 10.9507 ppm
+[4:13] Removing low confidence identifications
+[4:13] Removing interfering precursors
+[4:14] Training neural networks: 81681 targets, 92952 decoys
+[4:18] Number of IDs at 0.01 FDR: 32007
+[4:19] Calculating protein q-values
+[4:19] Number of genes identified at 1% FDR: 4407 (precursor-level), 3783 (protein-level) (inference performed using proteotypic peptides only)
+[4:19] Quantification
+[4:19] Quantification information saved to E:\LCMS\data_convert\ZY-5-3.mzML.quant.
+
+[4:20] File #5/15
+[4:20] Loading run E:\LCMS\data_convert\ZY-5-2.mzML
+[4:56] 100533 library precursors are potentially detectable
+[4:56] Processing...
+[4:59] RT window set to 6.06594
+[4:59] Recommended MS1 mass accuracy setting: 11.0088 ppm
+[5:03] Removing low confidence identifications
+[5:03] Removing interfering precursors
+[5:05] Training neural networks: 81248 targets, 92325 decoys
+[5:09] Number of IDs at 0.01 FDR: 25126
+[5:09] Calculating protein q-values
+[5:09] Number of genes identified at 1% FDR: 3635 (precursor-level), 3080 (protein-level) (inference performed using proteotypic peptides only)
+[5:09] Quantification
+[5:09] Quantification information saved to E:\LCMS\data_convert\ZY-5-2.mzML.quant.
+
+[5:10] File #6/15
+[5:10] Loading run E:\LCMS\data_convert\ZY-5-1.mzML
+[5:39] 100533 library precursors are potentially detectable
+[5:39] Processing...
+[5:41] RT window set to 5.93653
+[5:41] Recommended MS1 mass accuracy setting: 12.4936 ppm
+[5:46] Removing low confidence identifications
+[5:46] Removing interfering precursors
+[5:47] Training neural networks: 83529 targets, 93374 decoys
+[5:52] Number of IDs at 0.01 FDR: 36927
+[5:52] Calculating protein q-values
+[5:52] Number of genes identified at 1% FDR: 5008 (precursor-level), 4429 (protein-level) (inference performed using proteotypic peptides only)
+[5:52] Quantification
+[5:52] Quantification information saved to E:\LCMS\data_convert\ZY-5-1.mzML.quant.
+
+[5:53] File #7/15
+[5:53] Loading run E:\LCMS\data_convert\ZY-2-9.mzML
+[6:15] 100533 library precursors are potentially detectable
+[6:15] Processing...
+[6:17] RT window set to 5.55767
+[6:17] Recommended MS1 mass accuracy setting: 10.2741 ppm
+[6:21] Removing low confidence identifications
+[6:21] Removing interfering precursors
+[6:22] Training neural networks: 80114 targets, 91533 decoys
+[6:26] Number of IDs at 0.01 FDR: 25625
+[6:26] Calculating protein q-values
+[6:26] Number of genes identified at 1% FDR: 3909 (precursor-level), 3291 (protein-level) (inference performed using proteotypic peptides only)
+[6:26] Quantification
+[6:27] Quantification information saved to E:\LCMS\data_convert\ZY-2-9.mzML.quant.
+
+[6:27] File #8/15
+[6:27] Loading run E:\LCMS\data_convert\ZY-2-8.mzML
+[7:03] 100533 library precursors are potentially detectable
+[7:03] Processing...
+[7:05] RT window set to 6.10553
+[7:05] Recommended MS1 mass accuracy setting: 9.27828 ppm
+[7:08] Removing low confidence identifications
+[7:08] Removing interfering precursors
+[7:10] Training neural networks: 79189 targets, 90625 decoys
+[7:14] Number of IDs at 0.01 FDR: 32275
+[7:14] Calculating protein q-values
+[7:15] Number of genes identified at 1% FDR: 4341 (precursor-level), 3759 (protein-level) (inference performed using proteotypic peptides only)
+[7:15] Quantification
+[7:15] Quantification information saved to E:\LCMS\data_convert\ZY-2-8.mzML.quant.
+
+[7:15] File #9/15
+[7:15] Loading run E:\LCMS\data_convert\ZY-2-7.mzML
+[8:03] 100533 library precursors are potentially detectable
+[8:03] Processing...
+[8:04] RT window set to 5.99172
+[8:04] Recommended MS1 mass accuracy setting: 8.42527 ppm
+[8:08] Removing low confidence identifications
+[8:08] Removing interfering precursors
+[8:09] Training neural networks: 78027 targets, 87494 decoys
+[8:13] Number of IDs at 0.01 FDR: 29778
+[8:13] Calculating protein q-values
+[8:13] Number of genes identified at 1% FDR: 4210 (precursor-level), 3698 (protein-level) (inference performed using proteotypic peptides only)
+[8:13] Quantification
+[8:13] Quantification information saved to E:\LCMS\data_convert\ZY-2-7.mzML.quant.
+
+[8:14] File #10/15
+[8:14] Loading run E:\LCMS\data_convert\ZY-2-6.mzML
+[9:04] 100533 library precursors are potentially detectable
+[9:04] Processing...
+[9:05] RT window set to 5.86275
+[9:05] Recommended MS1 mass accuracy setting: 9.05143 ppm
+[9:09] Removing low confidence identifications
+[9:09] Removing interfering precursors
+[9:10] Training neural networks: 78717 targets, 87607 decoys
+[9:14] Number of IDs at 0.01 FDR: 31409
+[9:14] Calculating protein q-values
+[9:15] Number of genes identified at 1% FDR: 4245 (precursor-level), 3730 (protein-level) (inference performed using proteotypic peptides only)
+[9:15] Quantification
+[9:15] Quantification information saved to E:\LCMS\data_convert\ZY-2-6.mzML.quant.
+
+[9:15] File #11/15
+[9:15] Loading run E:\LCMS\data_convert\ZY-2-5.mzML
+[10:04] 100533 library precursors are potentially detectable
+[10:04] Processing...
+[10:06] RT window set to 5.72737
+[10:06] Recommended MS1 mass accuracy setting: 9.51017 ppm
+[10:09] Removing low confidence identifications
+[10:09] Removing interfering precursors
+[10:10] Training neural networks: 79506 targets, 88481 decoys
+[10:14] Number of IDs at 0.01 FDR: 34201
+[10:14] Calculating protein q-values
+[10:14] Number of genes identified at 1% FDR: 4401 (precursor-level), 3854 (protein-level) (inference performed using proteotypic peptides only)
+[10:14] Quantification
+[10:15] Quantification information saved to E:\LCMS\data_convert\ZY-2-5.mzML.quant.
+
+[10:15] File #12/15
+[10:15] Loading run E:\LCMS\data_convert\ZY-2-4.mzML
+[11:08] 100533 library precursors are potentially detectable
+[11:08] Processing...
+[11:10] RT window set to 6.00591
+[11:10] Recommended MS1 mass accuracy setting: 8.23736 ppm
+[11:14] Removing low confidence identifications
+[11:14] Removing interfering precursors
+[11:15] Training neural networks: 79178 targets, 89687 decoys
+[11:19] Number of IDs at 0.01 FDR: 34983
+[11:19] Calculating protein q-values
+[11:19] Number of genes identified at 1% FDR: 4408 (precursor-level), 3842 (protein-level) (inference performed using proteotypic peptides only)
+[11:19] Quantification
+[11:20] Quantification information saved to E:\LCMS\data_convert\ZY-2-4.mzML.quant.
+
+[11:20] File #13/15
+[11:20] Loading run E:\LCMS\data_convert\ZY-2-3.mzML
+[12:04] 100533 library precursors are potentially detectable
+[12:04] Processing...
+[12:05] RT window set to 6.16992
+[12:05] Recommended MS1 mass accuracy setting: 9.38078 ppm
+[12:09] Removing low confidence identifications
+[12:09] Removing interfering precursors
+[12:11] Training neural networks: 79635 targets, 90593 decoys
+[12:14] Number of IDs at 0.01 FDR: 37586
+[12:15] Calculating protein q-values
+[12:15] Number of genes identified at 1% FDR: 4676 (precursor-level), 4169 (protein-level) (inference performed using proteotypic peptides only)
+[12:15] Quantification
+[12:15] Quantification information saved to E:\LCMS\data_convert\ZY-2-3.mzML.quant.
+
+[12:16] File #14/15
+[12:16] Loading run E:\LCMS\data_convert\ZY-2-2.mzML
+[13:02] 100533 library precursors are potentially detectable
+[13:02] Processing...
+[13:03] RT window set to 6.24195
+[13:03] Recommended MS1 mass accuracy setting: 8.83784 ppm
+[13:07] Removing low confidence identifications
+[13:07] Removing interfering precursors
+[13:09] Training neural networks: 80527 targets, 90829 decoys
+[13:13] Number of IDs at 0.01 FDR: 35667
+[13:13] Calculating protein q-values
+[13:13] Number of genes identified at 1% FDR: 4525 (precursor-level), 3950 (protein-level) (inference performed using proteotypic peptides only)
+[13:13] Quantification
+[13:13] Quantification information saved to E:\LCMS\data_convert\ZY-2-2.mzML.quant.
+
+[13:14] File #15/15
+[13:14] Loading run E:\LCMS\data_convert\ZY-2-1.mzML
+[14:05] 100533 library precursors are potentially detectable
+[14:05] Processing...
+[14:07] RT window set to 5.94427
+[14:07] Recommended MS1 mass accuracy setting: 8.25616 ppm
+[14:11] Removing low confidence identifications
+[14:11] Removing interfering precursors
+[14:12] Training neural networks: 81200 targets, 91061 decoys
+[14:16] Number of IDs at 0.01 FDR: 36491
+[14:16] Calculating protein q-values
+[14:16] Number of genes identified at 1% FDR: 4814 (precursor-level), 4212 (protein-level) (inference performed using proteotypic peptides only)
+[14:16] Quantification
+[14:17] Quantification information saved to E:\LCMS\data_convert\ZY-2-1.mzML.quant.
+
+[14:18] Cross-run analysis
+[14:18] Reading quantification information: 15 files
+[14:19] Quantifying peptides
+[14:25] Assembling protein groups
+[14:26] Quantifying proteins
+[14:26] Calculating q-values for protein and gene groups
+[14:26] Calculating global q-values for protein and gene groups
+[14:26] Writing report
+[14:50] Report saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.tsv.
+[14:50] Saving precursor levels matrix
+[14:51] Precursor levels matrix (1% precursor and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.pr_matrix.tsv.
+[14:51] Saving protein group levels matrix
+[14:51] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.pg_matrix.tsv.
+[14:51] Saving gene group levels matrix
+[14:51] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.gg_matrix.tsv.
+[14:51] Saving unique genes levels matrix
+[14:51] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.unique_genes_matrix.tsv.
+[14:51] Stats report saved to F:\Dia_data_export\RHY_1117\result_quan-first-pass.stats.tsv
+[14:51] Generating spectral library:
+[14:51] 49489 precursors passing the FDR threshold are to be extracted
+[14:51] Loading run E:\LCMS\data_convert\ZY-5-6.mzML
+[15:49] 100533 library precursors are potentially detectable
+[15:49] 285 spectra added to the library
+[15:50] Loading run E:\LCMS\data_convert\ZY-5-5.mzML
+[16:41] 100533 library precursors are potentially detectable
+[16:42] 1011 spectra added to the library
+[16:43] Loading run E:\LCMS\data_convert\ZY-5-4.mzML
+[17:28] 100533 library precursors are potentially detectable
+[17:28] 682 spectra added to the library
+[17:29] Loading run E:\LCMS\data_convert\ZY-5-3.mzML
+[18:18] 100533 library precursors are potentially detectable
+[18:18] 826 spectra added to the library
+[18:19] Loading run E:\LCMS\data_convert\ZY-5-2.mzML
+[18:55] 100533 library precursors are potentially detectable
+[18:55] 195 spectra added to the library
+[18:56] Loading run E:\LCMS\data_convert\ZY-5-1.mzML
+[19:24] 100533 library precursors are potentially detectable
+[19:24] 2004 spectra added to the library
+[19:26] Loading run E:\LCMS\data_convert\ZY-2-9.mzML
+[19:46] 100533 library precursors are potentially detectable
+[19:46] 48 spectra added to the library
+[19:47] Loading run E:\LCMS\data_convert\ZY-2-8.mzML
+[19:59] 100533 library precursors are potentially detectable
+[19:59] 243 spectra added to the library
+[20:00] Loading run E:\LCMS\data_convert\ZY-2-7.mzML
+[20:11] 100533 library precursors are potentially detectable
+[20:11] 189 spectra added to the library
+[20:12] Loading run E:\LCMS\data_convert\ZY-2-6.mzML
+[20:23] 100533 library precursors are potentially detectable
+[20:23] 885 spectra added to the library
+[20:23] Loading run E:\LCMS\data_convert\ZY-2-5.mzML
+[20:35] 100533 library precursors are potentially detectable
+[20:35] 2328 spectra added to the library
+[20:36] Loading run E:\LCMS\data_convert\ZY-2-4.mzML
+[20:47] 100533 library precursors are potentially detectable
+[20:48] 4644 spectra added to the library
+[20:49] Loading run E:\LCMS\data_convert\ZY-2-3.mzML
+[21:01] 100533 library precursors are potentially detectable
+[21:01] 1422 spectra added to the library
+[21:02] Loading run E:\LCMS\data_convert\ZY-2-2.mzML
+[21:14] 100533 library precursors are potentially detectable
+[21:14] 1841 spectra added to the library
+[21:15] Loading run E:\LCMS\data_convert\ZY-2-1.mzML
+[21:29] 100533 library precursors are potentially detectable
+[21:29] 1032 spectra added to the library
+[21:30] Saving spectral library to lib.tsv
+[21:35] 49489 precursors saved
+[21:35] Loading the generated library and saving it in the .speclib format
+[21:35] Loading spectral library lib.tsv
+[21:36] Spectral library loaded: 6678 protein isoforms, 6923 protein groups and 49489 precursors in 42288 elution groups.
+[21:36] Loading protein annotations from FASTA F:\Dia_data_export\UP000000589_10090.fasta
+[21:38] Gene names missing for some isoforms
+[21:38] Library contains 6678 proteins, and 6570 genes
+[21:38] Saving the library to lib.tsv.speclib
+
+[21:38] Second pass: using the newly created spectral library to reanalyse the data
+[21:38] File #1/15
+[21:38] Loading run E:\LCMS\data_convert\ZY-5-6.mzML
+[21:55] 49489 library precursors are potentially detectable
+[21:55] Processing...
+[21:56] RT window set to 2.63639
+[21:56] Recommended MS1 mass accuracy setting: 11.2241 ppm
+[21:58] Removing low confidence identifications
+[21:58] Removing interfering precursors
+[21:59] Training neural networks: 45162 targets, 39613 decoys
+[22:01] Number of IDs at 0.01 FDR: 31950
+[22:01] Calculating protein q-values
+[22:01] Number of genes identified at 1% FDR: 4585 (precursor-level), 3918 (protein-level) (inference performed using proteotypic peptides only)
+[22:01] Quantification
+
+[22:03] File #2/15
+[22:03] Loading run E:\LCMS\data_convert\ZY-5-5.mzML
+[22:19] 49489 library precursors are potentially detectable
+[22:19] Processing...
+[22:21] RT window set to 2.63564
+[22:21] Recommended MS1 mass accuracy setting: 11.6448 ppm
+[22:22] Removing low confidence identifications
+[22:22] Removing interfering precursors
+[22:23] Training neural networks: 45363 targets, 39917 decoys
+[22:25] Number of IDs at 0.01 FDR: 33425
+[22:25] Calculating protein q-values
+[22:25] Number of genes identified at 1% FDR: 4597 (precursor-level), 3870 (protein-level) (inference performed using proteotypic peptides only)
+[22:25] Quantification
+
+[22:27] File #3/15
+[22:27] Loading run E:\LCMS\data_convert\ZY-5-4.mzML
+[22:43] 49489 library precursors are potentially detectable
+[22:43] Processing...
+[22:45] RT window set to 2.61171
+[22:45] Recommended MS1 mass accuracy setting: 10.7425 ppm
+[22:47] Removing low confidence identifications
+[22:47] Removing interfering precursors
+[22:47] Training neural networks: 44577 targets, 39470 decoys
+[22:50] Number of IDs at 0.01 FDR: 31142
+[22:50] Calculating protein q-values
+[22:50] Number of genes identified at 1% FDR: 4461 (precursor-level), 3594 (protein-level) (inference performed using proteotypic peptides only)
+[22:50] Quantification
+
+[22:52] File #4/15
+[22:52] Loading run E:\LCMS\data_convert\ZY-5-3.mzML
+[23:08] 49489 library precursors are potentially detectable
+[23:08] Processing...
+[23:09] RT window set to 2.64064
+[23:09] Recommended MS1 mass accuracy setting: 10.819 ppm
+[23:10] Removing low confidence identifications
+[23:10] Removing interfering precursors
+[23:11] Training neural networks: 46116 targets, 39704 decoys
+[23:13] Number of IDs at 0.01 FDR: 36009
+[23:13] Calculating protein q-values
+[23:13] Number of genes identified at 1% FDR: 4664 (precursor-level), 3857 (protein-level) (inference performed using proteotypic peptides only)
+[23:13] Quantification
+
+[23:15] File #5/15
+[23:15] Loading run E:\LCMS\data_convert\ZY-5-2.mzML
+[23:32] 49489 library precursors are potentially detectable
+[23:32] Processing...
+[23:34] RT window set to 2.63557
+[23:34] Recommended MS1 mass accuracy setting: 12.3171 ppm
+[23:35] Removing low confidence identifications
+[23:35] Removing interfering precursors
+[23:36] Training neural networks: 44612 targets, 39348 decoys
+[23:38] Number of IDs at 0.01 FDR: 29666
+[23:38] Calculating protein q-values
+[23:38] Number of genes identified at 1% FDR: 4013 (precursor-level), 3265 (protein-level) (inference performed using proteotypic peptides only)
+[23:38] Quantification
+
+[23:40] File #6/15
+[23:40] Loading run E:\LCMS\data_convert\ZY-5-1.mzML
+[23:56] 49489 library precursors are potentially detectable
+[23:56] Processing...
+[23:57] RT window set to 2.64829
+[23:57] Recommended MS1 mass accuracy setting: 11.5199 ppm
+[23:58] Removing low confidence identifications
+[23:58] Removing interfering precursors
+[23:59] Training neural networks: 46587 targets, 40321 decoys
+[24:01] Number of IDs at 0.01 FDR: 38579
+[24:02] Calculating protein q-values
+[24:02] Number of genes identified at 1% FDR: 5005 (precursor-level), 4203 (protein-level) (inference performed using proteotypic peptides only)
+[24:02] Quantification
+
+[24:04] File #7/15
+[24:04] Loading run E:\LCMS\data_convert\ZY-2-9.mzML
+[24:16] 49489 library precursors are potentially detectable
+[24:16] Processing...
+[24:17] RT window set to 2.6405
+[24:17] Recommended MS1 mass accuracy setting: 11.4287 ppm
+[24:19] Removing low confidence identifications
+[24:19] Removing interfering precursors
+[24:19] Training neural networks: 44766 targets, 39625 decoys
+[24:22] Number of IDs at 0.01 FDR: 31164
+[24:22] Calculating protein q-values
+[24:22] Number of genes identified at 1% FDR: 4304 (precursor-level), 3576 (protein-level) (inference performed using proteotypic peptides only)
+[24:22] Quantification
+
+[24:23] File #8/15
+[24:23] Loading run E:\LCMS\data_convert\ZY-2-8.mzML
+[24:35] 49489 library precursors are potentially detectable
+[24:35] Processing...
+[24:35] RT window set to 2.62561
+[24:35] Recommended MS1 mass accuracy setting: 9.72001 ppm
+[24:36] Removing low confidence identifications
+[24:36] Removing interfering precursors
+[24:37] Training neural networks: 44775 targets, 37314 decoys
+[24:39] Number of IDs at 0.01 FDR: 36281
+[24:39] Calculating protein q-values
+[24:39] Number of genes identified at 1% FDR: 4614 (precursor-level), 3787 (protein-level) (inference performed using proteotypic peptides only)
+[24:39] Quantification
+
+[24:41] File #9/15
+[24:41] Loading run E:\LCMS\data_convert\ZY-2-7.mzML
+[24:52] 49489 library precursors are potentially detectable
+[24:52] Processing...
+[24:53] RT window set to 2.6247
+[24:53] Recommended MS1 mass accuracy setting: 7.96493 ppm
+[24:54] Removing low confidence identifications
+[24:54] Removing interfering precursors
+[24:55] Training neural networks: 43099 targets, 34976 decoys
+[24:57] Number of IDs at 0.01 FDR: 33776
+[24:57] Calculating protein q-values
+[24:57] Number of genes identified at 1% FDR: 4518 (precursor-level), 3648 (protein-level) (inference performed using proteotypic peptides only)
+[24:57] Quantification
+
+[24:58] File #10/15
+[24:58] Loading run E:\LCMS\data_convert\ZY-2-6.mzML
+[25:09] 49489 library precursors are potentially detectable
+[25:09] Processing...
+[25:10] RT window set to 2.6153
+[25:10] Recommended MS1 mass accuracy setting: 9.13089 ppm
+[25:11] Removing low confidence identifications
+[25:11] Removing interfering precursors
+[25:11] Training neural networks: 44056 targets, 35163 decoys
+[25:13] Number of IDs at 0.01 FDR: 35583
+[25:14] Calculating protein q-values
+[25:14] Number of genes identified at 1% FDR: 4598 (precursor-level), 3900 (protein-level) (inference performed using proteotypic peptides only)
+[25:14] Quantification
+
+[25:15] File #11/15
+[25:15] Loading run E:\LCMS\data_convert\ZY-2-5.mzML
+[25:26] 49489 library precursors are potentially detectable
+[25:26] Processing...
+[25:27] RT window set to 2.62404
+[25:27] Recommended MS1 mass accuracy setting: 9.43786 ppm
+[25:28] Removing low confidence identifications
+[25:28] Removing interfering precursors
+[25:29] Training neural networks: 44810 targets, 35994 decoys
+[25:31] Number of IDs at 0.01 FDR: 37426
+[25:31] Calculating protein q-values
+[25:31] Number of genes identified at 1% FDR: 4616 (precursor-level), 3746 (protein-level) (inference performed using proteotypic peptides only)
+[25:31] Quantification
+
+[25:33] File #12/15
+[25:33] Loading run E:\LCMS\data_convert\ZY-2-4.mzML
+[25:44] 49489 library precursors are potentially detectable
+[25:44] Processing...
+[25:45] RT window set to 2.61772
+[25:45] Recommended MS1 mass accuracy setting: 7.98738 ppm
+[25:46] Removing low confidence identifications
+[25:46] Removing interfering precursors
+[25:47] Training neural networks: 45350 targets, 36363 decoys
+[25:49] Number of IDs at 0.01 FDR: 38362
+[25:49] Calculating protein q-values
+[25:49] Number of genes identified at 1% FDR: 4722 (precursor-level), 3825 (protein-level) (inference performed using proteotypic peptides only)
+[25:49] Quantification
+
+[25:51] File #13/15
+[25:51] Loading run E:\LCMS\data_convert\ZY-2-3.mzML
+[26:03] 49489 library precursors are potentially detectable
+[26:03] Processing...
+[26:03] RT window set to 2.63615
+[26:03] Recommended MS1 mass accuracy setting: 9.88448 ppm
+[26:04] Removing low confidence identifications
+[26:04] Removing interfering precursors
+[26:05] Training neural networks: 45863 targets, 37004 decoys
+[26:07] Number of IDs at 0.01 FDR: 40024
+[26:08] Calculating protein q-values
+[26:08] Number of genes identified at 1% FDR: 4861 (precursor-level), 4013 (protein-level) (inference performed using proteotypic peptides only)
+[26:08] Quantification
+
+[26:09] File #14/15
+[26:09] Loading run E:\LCMS\data_convert\ZY-2-2.mzML
+[26:21] 49489 library precursors are potentially detectable
+[26:21] Processing...
+[26:22] RT window set to 2.6169
+[26:22] Recommended MS1 mass accuracy setting: 8.06088 ppm
+[26:23] Removing low confidence identifications
+[26:23] Removing interfering precursors
+[26:24] Training neural networks: 45725 targets, 36998 decoys
+[26:26] Number of IDs at 0.01 FDR: 39222
+[26:26] Calculating protein q-values
+[26:26] Number of genes identified at 1% FDR: 4810 (precursor-level), 4032 (protein-level) (inference performed using proteotypic peptides only)
+[26:26] Quantification
+
+[26:28] File #15/15
+[26:28] Loading run E:\LCMS\data_convert\ZY-2-1.mzML
+[26:41] 49489 library precursors are potentially detectable
+[26:41] Processing...
+[26:42] RT window set to 2.62616
+[26:42] Recommended MS1 mass accuracy setting: 7.99257 ppm
+[26:43] Removing low confidence identifications
+[26:43] Removing interfering precursors
+[26:44] Training neural networks: 45773 targets, 37626 decoys
+[26:46] Number of IDs at 0.01 FDR: 38933
+[26:46] Calculating protein q-values
+[26:47] Number of genes identified at 1% FDR: 4918 (precursor-level), 3954 (protein-level) (inference performed using proteotypic peptides only)
+[26:47] Quantification
+
+[26:48] Cross-run analysis
+[26:48] Reading quantification information: 15 files
+[26:50] Quantifying peptides
+[26:57] Quantifying proteins
+[26:57] Calculating q-values for protein and gene groups
+[26:58] Calculating global q-values for protein and gene groups
+[26:58] Writing report
+[27:24] Report saved to F:\Dia_data_export\RHY_1117\result_quan.tsv.
+[27:24] Saving precursor levels matrix
+[27:25] Precursor levels matrix (1% precursor and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan.pr_matrix.tsv.
+[27:25] Saving protein group levels matrix
+[27:25] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan.pg_matrix.tsv.
+[27:25] Saving gene group levels matrix
+[27:25] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan.gg_matrix.tsv.
+[27:25] Saving unique genes levels matrix
+[27:25] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to F:\Dia_data_export\RHY_1117\result_quan.unique_genes_matrix.tsv.
+[27:25] Stats report saved to F:\Dia_data_export\RHY_1117\result_quan.stats.tsv
+[27:25] Log saved to F:\Dia_data_export\RHY_1117\result_quan.log.txt
+Finished
+
+
+DIA-NN exited
+DIA-NN-plotter.exe "F:\Dia_data_export\RHY_1117\result_quan.stats.tsv" "F:\Dia_data_export\RHY_1117\result_quan.tsv" "F:\Dia_data_export\RHY_1117\result_quan.pdf"
+PDF report will be generated in the background
+
