@@ -1,0 +1,46 @@
+Overview
+In our study, the identification of metabolites was accomplished by MetDNA (Metabolite identification and Dysregulated Network Analysis) (http://metdna.zhulab.cn/). MetDNA implements a metabolic reaction network (MRN) based recursive algorithm for metabolite identification, which supports data from different LC systems (e.g., HILIC and reverse phase) and MS platforms (e.g., Agilent QTOF, Sciex TripleTOF, Thermo Orbitrap, and others). Here, we utilisted MetDNA for the large-scale and ambiguous identification of metabolites from LC-MS/MS data sets. 
+
+Details
+The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=5) and ccRCC mice (group KMS, n=3). The details for sample preparation and data acquisition can be found in our publication. We uploaded data files to MetDNA2 following the instructions in help page. Here, we imported Peak table, MS/MS data and Sample information to perform metabolite identification and dysregulated metabolic pathway analysis. Relevent data were uploaded:
+• Peak table
+  Peaks data NEG.csv
+  Peaks data POS.csv
+• MS/MS data
+  KM1neg.wiff
+  KM2neg.wiff
+  KM3neg.wiff
+  KM4neg.wiff
+  KM5neg.wiff
+  KMSF37neg.wiff
+  KMSF68neg.wiff
+  KMSML3neg.wiff
+  KM1pos.wiff
+  KM2pos.wiff
+  KM3pos.wiff
+  KM4pos.wiff
+  KM5pos.wiff
+  KMSF37pos.wiff
+  KMSF68pos.wiff
+  KMSML3pos.wiff
+• Sample information
+  sample.info.csv
+Processing parameters were set as following:
+• MetDNA Version:  Version1
+• Ionization Polarty: Both
+• MS Instrument: qTOF mass spectrometer (TripleTOF 6600, AB SCIEX)
+• Collision Energy: 30
+• Control Group: KM
+• Case Group: KMS
+• Species: Mus musculus (mouse)
+
+Analysis results
+Inluding:
+• Annotations of metabolits
+• Altered metabolits (VIP>1)
+• Pathway enrichment analysis
+
+The processed data have been uploaded into the Source Data as well as Supplementary Table 1. 
+
+Visualizing
+Pathway enrichment analysis data were showed in Fig. 2b. Identified metabolites with significant differences (VIP>1) between two groups (KMS vs KM) were selected to show their fold changes based on their amount by using GraphPad Prism software v8.4.2.679, depicted in the form of dot chart (Fig. 2c).
