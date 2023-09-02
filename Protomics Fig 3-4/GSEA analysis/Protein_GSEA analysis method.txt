@@ -1,0 +1,22 @@
+Overview
+Gene Set Enrichment Analysis (GSEA, https://www.gsea-msigdb.org/gsea/index.jsp) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes). In our study, GSEA software (v.4.1) (http://software.broadinstitute.org/gsea/index.jsp) was used to obtain NE score (NES) (Figure 3f and Figure 4a). 
+
+Details
+Here, we imported protein Expression Data, Phenotype Data and Gene Set Database to Gene Set Enrichment Analysis. Relevent data we uploaded were included in this folder:
+• Protein_Expression Data.gct
+• Protein_Phenotype Data.cls
+• Protein_Gene Set Database.chip
+The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=9) and ccRCC mice (group KMS, n=5). The details for sample preparation and data acquisition can be found in our publication. We uploaded data files to GSEA tool following the instructions in help page. 
+Processing parameters were set as following:
+• Expression dataset: Protein Expression Data.gct
+• Gene sets database: Gene matrix c2.cp.kegg.v2022
+• Number of permutations: 1000
+• Phenotype labels: Protein Phenotype Data.cls KMS_versus_KM
+• Permutation type: phenotype
+• Chip platform: Protein Gene Set Database.chip
+
+Analysis results
+Tables of NE score (NES) for each pathway were generated. The processed data, serving as the foundation for NES panels, have been uploaded into the Source Data. 
+
+Visualizing
+The GraphPad Prism software v8.4.2.679 was utilized to display P value and NE score in dot plot (Figure 3f and Figure 4a).
