@@ -1,0 +1,31 @@
+#fastp - shell
+fastp -i R1.fastq.gz -I R2.fastq.gz -l 50 -n 5 -q 15 -h Sample.html -j Sample.json -o Sample.filtered.1.fq.gz -O Sample.filtered.2.fq.gz
+
+#hisat2 - shell
+hisat2 -p 8 -5 5 -3 5 --novel-splicesite-outfile Sample.txt -x chrAll -1 Sample.1.fq -2 Sample.2.fq
+
+#htseq - shell
+htseq-count -f bam -s reverse -a 10 -m union --nonunique none Sample.bam genome.gtf > Sample.htseq.result
+
+
+#DESeq2 - R
+library(DESeq2)
+
+dat = read.table(infile, he=T, sep="\t", row.names=1)
+condition = read.table(conditionFile, he=T, sep="\t")
+case = "KMS"
+control = "KM"
+
+dds <- DESeqDataSetFromMatrix(dat, DataFrame(condition), design= ~ condition)
+dds <- DESeq(dds)
+res <- results(dds,contrast=c("condition",case,control))
+
+#GoPathway - R
+library(clusterProfiler)
+
+fg.gene <- read.delim(geneList, stringsAsFactors = F)
+bg.gene <- read.delim(bggene, stringsAsFactors = F)
+GSet.anno <- read.delim(setanno, stringsAsFactors = F)
+
+GSet_rich <- enricher(gene = fg.gene,TERM2GENE = bg.gene,TERM2NAME = GSet.anno,pvalueCutoff = 1, pAdjustMethod = 'BH',qvalueCutoff = 1)
+out <- GSet_rich@result

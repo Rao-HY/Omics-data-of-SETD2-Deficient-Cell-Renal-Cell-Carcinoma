@@ -1,0 +1,34 @@
+Overview
+HISAT2 (http://daehwankimlab.github.io/hisat2/) is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. In addition to using one global GFM index that represents a population of human genomes, HISAT2 uses a large set of small GFM indexes that collectively cover the whole genome. These small indexes (called local indexes), combined with several alignment strategies, enable rapid and accurate alignment of sequencing reads. 
+In our study, The sequencing reads were mapped to the mouse genome (assembly GRCm38) using the HISAT2 software. The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=5) and ccRCC mice (group KMS, n=5). Transcriptomics (RNA-seq) raw data have been deposited in the Gene Expression Omnibus (GEO) under accession number GEO: GSE221136. The details for sample preparation and data acquisition can be found in our publication. 
+
+Details
+Before read mapping, clean reads were obtained from the raw reads by removing the adaptor sequences, reads with >5% ambiguous bases (noted as N) and low-quality reads containing more than 20 percent of bases with qualities of <20. The clean reads were then aligned to mouse genome (version: GRCm38 NCBI) using the HISAT2.
+• Building indexes
+First, download the source package (http://daehwankimlab.github.io/hisat2/download/), and build the HISAT2 tools by running GNU make with no arguments. NCBI-NGS toolkit was downloaded for the support of SRA data access in HISAT2.
+• Prepare dara
+Download reference
+$ wget 	https://cloud.biohpc.swmed.edu/index.php/s/grcm38/download
+$ gzip -d M. musculus. GRCm38.tar.gz
+Download GTF and make exon, splicesite file
+$ wget ftp://ftp.ensembl.org/pub/release-84/gtf/mus_musculus/Mus_musculus.GRCm38.84.gtf.gz
+$ gzip -d Mus_musculus.GRCm38.84.tar.gz
+$ mv Mus_musculus.GRCm38.84.gtf genome.gtf
+$ hisat2_extract_splice_sites.py genome.gtf > genome.ss
+$ hisat2_extract_exons.py genome.gtf > genome.exon
+Download SNP
+$ wgethttps://https://hgdownload.soe.ucsc.edu/goldenPath/mm10/snp142Mask/md5sum.txt.gz
+$ gzip -d snp142Mask.txt.gz
+$ hisat2_extract_snps_haplotypes_UCSC.py genome.fa snp142Mask.txt.ensembl genome
+• Build HFM index
+$ hisat2-build -p 16 genome.fa genome
+• Build HGFM index with SNPs and transcripts
+$ hisat2-build -p 16 --snp genome.snp --haplotype genome.haplotype --exon genome.exon --ss genome.ss genome.fa genome_snp_tran
+
+Analysis results
+After gene annotation, HTseq was used to count gene counts and RPKM method was used to determine the gene expression. RUVSeq was utilized to eliminate unwanted variation from RNA-Seq data. P-value and FDR analysis were subjected to the following criteria: i) Fold Change>1.5 or < 0.667; ii) P-value<0.05, FDR<0.05.
+
+The processed data have been uploaded into the Source Data. These data also have been deposited in the Gene Expression Omnibus (GEO) under accession number GEO: GSE221136. P-value and FDR analysis were subjected to the following criteria: i) Fold Change>1.5 or < 0.667; ii) P-value<0.05, FDR<0.05.
+
+Visualizing
+Heatmap of the altered genes between KM (n=5) and KMS (n=5) mice were constructed using TBtools (version 1.0986; https://github.com/CJ-Chen/TBtools/releases) (Fig. 3b). Identified genes with significant differences (P value < 0.05) between two groups (KMS vs KM) were selected to show their fold changes and FDR using GraphPad Prism software v8.4.2.679, depicted in the form of volcano plot (Fig. 3c).
