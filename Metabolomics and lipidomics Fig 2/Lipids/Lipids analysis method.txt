@@ -1,0 +1,48 @@
+Overview
+In our study, the identification of lipids was accomplished by Lipid4DAnalyzer (http:// http://lipid4danalyzer.zhulab.cn/, upgraded LipidIMMS Analyzer). It integrates multi-dimensional information including m/z, retention time (RT), collision cross-section (CCS) and MS/MS spectra for lipid identification. Users could simply import peak table and MS/MS data files for the analysis.
+
+Details
+The dataset is the dataset of mice, which has two groups of renal cells from PKD mice (group KM, n=5) and ccRCC mice (group KMS, n=3). The details for sample preparation and data acquisition can be found in our publication. We uploaded data files to Lipid4DAnalyzer following the instructions in help page. Here, We imported peak table, MS/MS data and sample information to perform lipids identification. Relevant data were uploaded:
+• Peak table
+  Peaks data NEG.csv
+  Peaks data POS.csv
+• MS/MS data
+  KM1neg.wiff
+  KM2neg.wiff
+  KM3neg.wiff
+  KM4neg.wiff
+  KM5neg.wiff
+  KMSF37neg.wiff
+  KMSF68neg.wiff
+  KMSML3neg.wiff
+  KM1pos.wiff
+  KM2pos.wiff
+  KM3pos.wiff
+  KM4pos.wiff
+  KM5pos.wiff
+  KMSF37pos.wiff
+  KMSF68pos.wiff
+  KMSML3pos.wiff
+• Sample information
+  sample.info.csv
+Processing parameters were set as following:
+• MetDNA Version:  Version1
+• Polarity: Both
+• Instrument Platform: qTOF mass spectrometer (TripleTOF 6600, AB SCIEX)
+• LC Column: Kinetex-C18 column (100 mm × 2.1 mm, 1.7μm, Phenomenex)
+• Mass Range: 200-2000 m/z
+• Control Group: KM
+• Case Group: KMS
+• Species: Mus musculus (mouse)
+
+Analysis results
+Inluding:
+Annotations of lipids
+Altered lipids (VIP>1)
+
+The processed data have been uploaded into the Source Data as well as Supplementary Table 2. 
+
+Visualizing
+Identified lipids with significant differences (VIP>1) between two groups (KMS vs KM) were selected to show their fold changes based on their amount by using GraphPad Prism software v8.4.2.679, depicted in the form of dot plot (Fig. 2f). The spectrum of identified lipids was categorized into nine lipid subclasses via the ClassyFire classification system. The lipids abundances were visualized using GraphPad Prism software, featuring pie charts (Figure 2d) and bar charts (Figure 2e). 
+
+
